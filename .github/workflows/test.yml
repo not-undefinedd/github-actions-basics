@@ -1,0 +1,19 @@
+#------------------------------
+# Github Actions Basics
+#------------------------------
+
+name: My-GithubActions-Basic
+
+on:
+  push:
+    branches:
+      - main
+
+
+jobs: 
+  my_testing:
+    runs-on: [ubuntu-latest]
+
+    steps:
+      - name: Print nice message
+        run: echo "Hello World from Sikal"
